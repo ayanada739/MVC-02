@@ -27,7 +27,7 @@ namespace MVC02
 
             app.MapControllerRoute(
                 name: "Default",
-                pattern: "/{controller=Movies}/{action=Test}/{id:int?}"
+                pattern: "/{controller}/{action}/{id:int?}"
                 );
 
 
