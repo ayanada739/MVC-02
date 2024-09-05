@@ -17,4 +17,11 @@
     <None Remove="NewFolder\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="WWWroot\css\" />
+    <Folder Include="WWWroot\js\" />
+    <Folder Include="WWWroot\images\" />
+    <Folder Include="WWWroot\lib\" />
+  </ItemGroup>
+
 </Project>

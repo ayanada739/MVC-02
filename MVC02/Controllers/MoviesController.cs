@@ -22,8 +22,7 @@ namespace MVC02.NewFolder2
         [ActionName(name: "Hamada")]
 
 
-        public IActionResult GetMovie(int? id , string name , MoviesController movie
-             )
+        public IActionResult GetMovie(int? id , string name , MoviesController movie)
         {
             //ContentResult result = new ContentResult();
             //result.Content = $"Id: {id}";
