@@ -6,6 +6,11 @@ namespace MVC02.NewFolder2
     {
         //Actions: Public non-static Functions
 
+
+        public string Test()
+        {
+            return "Default Path";
+        }
         public string GetMovie(int id)
         {
             return $"Id: {id}";
