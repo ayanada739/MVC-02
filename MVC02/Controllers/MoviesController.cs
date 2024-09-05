@@ -22,7 +22,8 @@ namespace MVC02.NewFolder2
         [ActionName(name: "Hamada")]
 
 
-        public IActionResult GetMovie(int? id)
+        public IActionResult GetMovie(int? id , string name , MoviesController movie
+             )
         {
             //ContentResult result = new ContentResult();
             //result.Content = $"Id: {id}";
@@ -30,30 +31,34 @@ namespace MVC02.NewFolder2
             ////result.ContentType = "object/pdf";
             //return result;
 
-            return Content(content: $"Id: {id}" , contentType: "object/pdf");
+            return Content(content: $"Id: {id}" , contentType: "text/html");
         }
 
+        // Action Parameters Binding:
+        //1. Form
+        //2. Segment
+        //3. Query String / Query Params
+        //4. File
 
+        //public IActionResult Test(int? id)
+        //{
+        //    if (id is null)
+        //    {
+        //        //RedirectResult result = new RedirectResult(url: " https://www.facebook.com/");
+        //        //return result;
 
-        public IActionResult Test(int? id)
-        {
-            if (id is null)
-            {
-                //RedirectResult result = new RedirectResult(url: " https://www.facebook.com/");
-                //return result;
+        //        return Redirect(url: " https://www.facebook.com/");
+        //    }
+        //    else
+        //    {
+        //        //RedirectToActionResult result = new RedirectToActionResult(actionName: "GetMovie", controllerName: "Movies", new { id = "Hamada" });
+        //        //return result;
 
-                return Redirect(url: " https://www.facebook.com/");
-            }
-            else
-            {
-                //RedirectToActionResult result = new RedirectToActionResult(actionName: "GetMovie", controllerName: "Movies", new { id = "Hamada" });
-                //return result;
-
-                return RedirectToAction(actionName: "GetMovie", controllerName: "Movies", new { id = "Hamada" });
-            }
+        //        return RedirectToAction(actionName: "GetMovie", controllerName: "Movies", new { id = "Hamada" });
+        //    }
 
             
-        }
+        //}
 
         //public RedirectResult Test01(int? id)
         //{
