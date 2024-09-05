@@ -17,6 +17,8 @@ namespace MVC02
 
             var app = builder.Build();
 
+            app.UseStaticFiles(); //MiddleWare use it for static files
+
             app.MapGet("/", () => "Hello World!");
             //app.MapGet("/Hamada", () => "Hello Hamada!");
             //app.MapGet("/Signin", Signin);
@@ -27,7 +29,7 @@ namespace MVC02
 
             app.MapControllerRoute(
                 name: "Default",
-                pattern: "/{controller}/{action}/{id:int?}"
+                pattern: "/{controller=Home}/{action=Index}/{id:int?}"
                 );
 
 

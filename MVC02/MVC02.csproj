@@ -18,10 +18,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Movies\" />
     <Folder Include="WWWroot\css\" />
     <Folder Include="WWWroot\js\" />
     <Folder Include="WWWroot\images\" />
     <Folder Include="WWWroot\lib\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.4" />
   </ItemGroup>
 
 </Project>
